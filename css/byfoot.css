@@ -1,14 +1,72 @@
-h1 {
-    font-weight: 300;
+body header {
+    background-image: url(../images/juan-manuel-nunez-mendez-y1IEnAYvMxY-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: lightgray;
+    padding: 15px 15px;
+}    
+body header h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+    font-size: 50px;
+    color: greenyellow;
 }
-.body {
+.menu {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: left;
+    color: black;
+    text-decoration: underline;
+}
+ul {
+    list-style: none;
+}
+ul li::before {
+    content: "\2022";
+    color: greenyellow;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+header a:link {
+     color: white;   
+}
+header a:visited {
+    color: white;   
+}
+header a:hover {
+    color: greenyellow;   
+}
+body {
+    background-color: gainsboro;
+}
+body p {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 24px;
-    line-height: 2;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 300;
 }
-.img {
-    height: 100px;
-    width: 100px;
+body h2 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 300;
+    color: green;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: green;
+}
+body figcaption p {
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+}
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
 }

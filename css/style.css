@@ -1,5 +1,62 @@
-.title {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 24px;
+header {
+    background-image: url(../images/eric-zhang-aJmmebD4NpE-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: lightgray;
+    padding: 15px 15px;
+
+/*rule for header title*/
+}
+body header h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    text-align: right;
+}
+
+/*rule to make menu text left aligned*/
+header nav {
+    text-align: left;
+}
+
+/*rules for the menu buttons*/
+header button {
+    background-color: gray;
+    border: none;
+    color: salmon;
+    padding: 10px 24px;
+    width: 250px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+header button:hover {
+    background-color: bisque;
+    color: black;
+}
+
+body {
+    background-color: gainsboro;
+}
+
+body h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
+
+p {
+    text-align: justify;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body p a:link {
+    color: black;
+    text-decoration: underline;
 }
