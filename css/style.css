@@ -60,3 +60,29 @@ body p a:link {
     color: black;
     text-decoration: underline;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+/*responsive rules*/
+@media only screen and (max-width: 598px) {
+    header {
+        background-image: none;
+    }
+    body header h1 {
+        text-align: left;
+    }
+    body {
+        background-color: white;
+    }
+    }

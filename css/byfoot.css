@@ -70,3 +70,16 @@ body figcaption p {
     height: auto;
     border-radius: 8px;
 }
+/*responsive rules*/
+@media only screen and (max-width: 598px) {
+    body header {
+        background-image: none;
+        background-color: green;
+    }
+    body header h1 {
+        text-align: left;
+    }
+    body {
+        background-color: white;
+    }
+    }
