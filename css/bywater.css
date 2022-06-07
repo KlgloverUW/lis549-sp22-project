@@ -1,3 +1,4 @@
+/*Style for header background and text*/
 body header {
     background-image: url(../images/josh-withers-76YjW4gEAsI-unsplash.jpg);
     background-size: cover;
@@ -11,24 +12,57 @@ body header h1 {
     font-size: 50px;
     color:darkblue;
 }
+
+/*Style for header menu buttons*/
+header button {
+    background-color: gray;
+    border: none;
+    color: blue;
+    padding: 10px 24px;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+header button:hover {
+    background-color: aqua;
+    color: black;
+}
+
+/*Style for body background, headers, and paragraphs*/
 body {
     background-color: gainsboro;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-    line-height: 1;
-    font-weight: 300;
-    color: black;
 }
 h2 {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 40px;
-    line-height: 1;
-    font-weight: 300;
+    font-size: 30px;
+    font-weight: bold;
     color: darkblue;
     text-align: center;
     text-decoration: underline;
     text-decoration-color: darkblue;
 }
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    text-align: left;
+    text-indent: 50px;
+    color: black;
+}
+
+/*Style for lists of recommended sites, organizations*/
+ul {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: black;
+    list-style: square;
+}
+
+/*Style for images and captions*/
 .image {
     display: block;
     margin-left: auto;
@@ -43,7 +77,14 @@ body figcaption p {
     text-align: center;
 }
 
-/*responsive rules*/
+/* Style for footer */
+footer {
+    color: black;
+    font-style: italic;
+    font-size: 15px;
+}
+
+/*Responsive rules to change header and body background when resized*/
 @media only screen and (max-width: 598px) {
     body header {
         background-image: none;

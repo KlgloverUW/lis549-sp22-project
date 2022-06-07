@@ -1,3 +1,4 @@
+/*Style for the header*/
 header {
     background-image: url(../images/eric-zhang-aJmmebD4NpE-unsplash.jpg);
     background-size: cover;
@@ -5,7 +6,7 @@ header {
     background-color: lightgray;
     padding: 15px 15px;
 
-/*rule for header title*/
+/*Style for header title*/
 }
 body header h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -13,12 +14,12 @@ body header h1 {
     text-align: right;
 }
 
-/*rule to make menu text left aligned*/
+/*Making header menu text left aligned*/
 header nav {
     text-align: left;
 }
 
-/*rules for the menu buttons*/
+/*Style for menu buttons*/
 header button {
     background-color: gray;
     border: none;
@@ -33,52 +34,91 @@ header button {
     cursor: pointer;
     border-radius: 8px;
 }
-
+/*Setting different style for mouse hover over header buttons*/
 header button:hover {
     background-color: bisque;
     color: black;
 }
-
+/*Background color for body*/
 body {
     background-color: gainsboro;
 }
-
+/*Style for body headers*/
 body h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
+    text-align: center;
     color: black;
+    text-decoration: underline;
 }
 
+/*Style for paragraphs*/
 p {
-    text-align: justify;
+    text-indent: 50px;
+    text-align: left;
     color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
 }
 
 body p a:link {
     color: black;
     text-decoration: underline;
 }
+
+ul {
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+}
+ul a:link {
+    color: black;
+    text-decoration: underline;
+}
+/* Styling for footer */
+footer {
+    color: black;
+    font-style: italic;
+    font-size: 15px;
+}
+footer a:link {
+    color: black;
+    text-decoration: underline;
+}
+
+/* Rules for grid*/
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: #2196F3;
+    background-color: gainsboro;
     padding: 10px;
   }
   .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: papayawhip;
+    border: 1px solid darkgray;
     padding: 20px;
     font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
   }
+  .grid-item:hover {
+      background-color: burlywood;
+      font-weight: bold;
+      cursor: pointer;
+  }
+  .grid-item a:link {
+    color: black;
+    text-decoration: underline;
+  }
 
-/*responsive rules*/
+/*Responsive rules*/
 @media only screen and (max-width: 598px) {
+    /* To disappear header image*/
     header {
         background-image: none;
     }
+    /*To change header text alignment & background color*/
     body header h1 {
         text-align: left;
     }
@@ -86,3 +126,4 @@ body p a:link {
         background-color: white;
     }
     }
+

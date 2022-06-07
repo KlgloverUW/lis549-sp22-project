@@ -1,3 +1,4 @@
+/*Style for header background and text*/
 body header {
     background-image: url(../images/michal-dziekonski-PZIMX4G6RLA-unsplash.jpg);
     background-size: cover;
@@ -8,27 +9,58 @@ body header {
 body header h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    font-size: 70px;
+    font-size: 50px;
     color:darkgoldenrod;
 }
+
+/*Style for header menu buttons*/
+header button {
+    background-color: gray;
+    border: none;
+    color: burlywood;
+    padding: 10px 24px;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+header button:hover {
+    background-color: white;
+    color: black;
+}
+
+/*Style for body background, paragraphs, and headers*/
 body {
     background-color: gainsboro;
+}
+p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-    line-height: 1;
-    font-weight: 300;
+    font-size: 25px;
+    text-align: left;
+    text-indent: 50px;
     color: black;
 }
 h2 {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 40px;
-    line-height: 1;
-    font-weight: 300;
+    font-size: 30px;
+    font-weight: bold;
     color: darkgoldenrod;
     text-align: center;
     text-decoration: underline;
     text-decoration-color: darkgoldenrod;
 }
+/*Style for lists of recommended sites, organizations*/
+ul {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: black;
+    list-style: square;
+}
+/*Style for images and captions*/
 .image {
     display: block;
     margin-left: auto;
@@ -37,12 +69,23 @@ h2 {
     height: auto;
     border-radius: 8px;
 }
-figcaption {
+figcaption p {
     font-size: 16px;
     font-style: italic;
     text-align: center;
 }
-/*responsive rules*/
+
+/* Style for footer */
+footer {
+    color: black;
+    font-style: italic;
+    font-size: 15px;
+}
+footer a:link {
+    color: black;
+    text-decoration: underline;
+}
+/*Responsive rules to change header and backgrounds when resized*/
 @media only screen and (max-width: 598px) {
     body header {
         background-image: none;
